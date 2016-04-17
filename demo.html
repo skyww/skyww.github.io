@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	 body{background:linear-gradient(#fff,skyblue);height:617px;}
+	.box{ width:800px; border:1px solid red; margin:50px auto; height:358px; position:relative; overflow:hidden;}
+	.box ul{ position:absolute; top:50%; height:179px; margin-top:-90px;}
+	.box li{ float:left; width:260px; height:179px; padding:0 10px; position:relative;}
+	.box img{ width:260px; height:179px;}
+	.box1{width:100%;position:absolute;left:0;bottom:0;text-align:center;}
+	.box1 img{width:64px;}
+</style>
+<script>
+
+	function Big(){
+	
+		var oBox1=document.getElementById('box2');
+		var aImg=oBox1.children;
+		oBox1.onmousemove=function(ev){
+			var oEv=ev||event;
+			var sX=oEv.clientX;
+			var sY=oEv.clientY;
+			//对图片进行循环获取位置。
+			for(var i=0;i<aImg.length;i++){
+					var cL=aImg[i].offsetLeft+aImg[i].offsetWidth/2;
+					var cT=aImg[i].offsetTop+oBox1.offsetTop+aImg[i].offsetHeight/2;
+					var a=cL-sX;
+					var b=cT-sY;
+					var c=Math.sqrt(a*a+b*b);
+					var scale=1-c/500;
+					if(scale<0.5)scale=0.5;
+					aImg[i].style.width=scale*128+'px';
+				
+				
+			}
+		};	
+	
+	}
+	
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var oUl=oBox.children[0];
+		var aLi=oUl.children;
+		var aImg=oUl.getElementsByTagName('img');
+		oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+		var boxC=oBox.offsetWidth/2;
+		var n=2;
+		oUl.onmousedown=function(ev){
+			var oEvent=ev||event;
+			var disX=oEvent.clientX-oUl.offsetLeft;
+			document.onmousemove=function(ev){
+				var oEvent=ev||event;
+				var l=oEvent.clientX-disX;
+				if(l>boxC-0.5*aLi[0].offsetWidth){
+					l=boxC-0.5*aLi[0].offsetWidth;	
+				}
+				if(l<boxC-(aLi.length-0.5)*aLi[0].offsetWidth){
+					l=boxC-(aLi.length-0.5)*aLi[0].offsetWidth;
+						
+				}
+				
+				oUl.style.left=l+'px';
+				
+				setSize();
+			};
+			document.onmouseup=function(){
+				document.onmousemove=document.onmouseup=null;	
+			};
+			
+			return false;
+		};
+		
+		//设置ul的初始位置
+		oUl.style.left=boxC-(n+0.5)*aLi[0].offsetWidth+'px';
+		
+		setSize();
+		function setSize(){
+			for(var i=0;i<aLi.length;i++){
+				var l=aLi[i].offsetLeft+oUl.offsetLeft+aLi[i].offsetWidth/2;
+				var x=Math.abs(boxC-l);//绝对值获取正数；
+				var scale=1-x/500;
+				scale<0.5&&(scale=0.5);
+				aImg[i].style.width=scale*520+'px';
+				aImg[i].style.height=scale*358+'px';
+				aImg[i].style.marginTop=-(aImg[i].offsetHeight-179)/2+'px';
+				aImg[i].style.marginLeft=-(aImg[i].offsetWidth-260)/2+'px';	
+				aLi[i].style.zIndex=scale*100000;
+			}	
+		}
+		
+		//放大的图片
+		
+		Big();
+		
+	};
+</script>
+</head>
+
+<body>
+	<div class="box" id="box">
+    	<ul>
+        	<li><img src="img3/1.jpg" /></li>
+            <li><img src="img3/2.jpg" /></li>
+            <li><img src="img3/3.jpg" /></li>
+            <li><img src="img3/4.jpg" /></li>
+            <li><img src="img3/5.jpg" /></li>
+            <li><img src="img3/6.jpg" /></li>
+            <li><img src="img3/7.jpg" /></li>
+            <li><img src="img3/8.jpg" /></li>
+        </ul>
+    </div>
+	
+	<div class="box1" id="box2">
+		<img src="img3/1.png" />
+		<img src="img3/2.png" />
+		<img src="img3/3.png" />
+		<img src="img3/4.png" />
+		<img src="img3/5.png" />
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+

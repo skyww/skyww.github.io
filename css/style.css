@@ -1,0 +1,237 @@
+.wrap{
+	margin:0 auto;
+	width:1024px;
+}
+body{
+	color: #333;
+	background-image:url(../images/subtle_dots.png);
+	font-family: 'Anaheim', sans-serif;
+}
+.left-content,.right-content{
+	margin-top:50px;
+}
+
+		
+.header-image{width:830px;height:518px;position:relative;background:url(file:///C|/Users/ww/Desktop/个人网站/web/images/j1.jpg) no-repeat;}
+.header-image span{position:absolute;background:url(file:///C|/Users/ww/Desktop/个人网站/web/images/j0.jpg) no-repeat;}
+
+.left-content{
+	float: left;
+	width:150px;
+	margin-right:20px;
+}
+.menu{
+	margin-top:30px;
+}
+.menu li{
+	display: block;
+	margin-bottom: 18px;
+	line-height: 1.3em;
+}
+.menu li a{
+	display: block;
+	height: 35px;
+	padding: 5px 0 0 32px;
+	color: #222;
+	background-repeat: no-repeat;
+	font-size:18px;
+	color:#34AC98;
+
+}
+.menu li a:hover,.menu ul li.active a{
+	color:#C0680A;
+}
+#home a {
+	background-image:url(../images/h-icon.png);
+}
+#photo a{
+	background-image:url(../images/p-icon.png);
+}
+#video a{
+	background-image:url(../images/v-icon.png);
+}
+#music a{
+	background-image:url(../images/m-icon.png);
+}
+#blog a{
+	background-image:url(../images/b-icon.png);
+}
+.l-news h3,.l-frds h3{
+	margin-bottom:12px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	border-bottom: 1px dashed #E5E5E5;
+	text-transform:uppercase;
+	
+}
+.l-news span{
+	color:#34AC98;
+	font-size:12px;
+}
+.l-news p,.l-frds p{
+	margin:15px 0;
+	border-radius: 5px;
+	border: 1px solid #E5E5E5;
+	font-size:10px;
+	text-align:center;
+	padding:5px 5px;
+	cursor: pointer;
+	text-transform:uppercase;
+	color:#34AC98;
+}
+.l-news p:hover,.l-frds p:hover{
+	color:#C0680A;
+	background-color:#D3EDE9;
+}
+.l-frds h4{
+	font-size:12px;
+}
+.right-content{
+	float:right;
+	width:830px;
+	
+}
+.sub-menu{
+	margin-bottom:35px;
+	
+}
+.sub-menu1 img{
+	cursor: pointer;
+}
+.message{
+	border-bottom: 1px dotted #e5e5e5;
+	padding:10px 0;
+	border-top:1px dotted #e5e5e5;
+	margin-bottom:40px;
+}
+.message img{
+	float:left;
+	padding:0 10px 5px 0;
+}
+.message p{
+	font-size:18px;
+	line-height:1.8em;
+}
+.content{
+	margin-bottom:40px;
+}
+.grid:nth-child(1),.grid:nth-child(2),.grid:nth-child(3){
+	float:left;
+	width:195px;
+	margin-right:16px;
+}
+.grid:nth-child(4){
+	float:left;
+	width:195px;
+}
+
+.im1{
+	width:200px;
+	height:200px;
+	background:url(file:///C|/Users/ww/Desktop/个人网站/web/images/2.jpg)-100px 0;
+	border:1px solid #e5e5e5;
+	position:relative;
+	overflow:hidden;
+}
+.im2{background:url(file:///C|/Users/ww/Desktop/个人网站/web/images/7.jpg) -60px 0px;}
+.im3{background:url(file:///C|/Users/ww/Desktop/个人网站/web/images/12.jpg) -150px 0px;}
+.im4{background:url(file:///C|/Users/ww/Desktop/个人网站/web/images/14.jpg) -240px 0px;}
+
+.im1 span{width:100%;height:100%;background:linear-gradient(#0f0,skyblue);position:absolute;left:0;top:0;opacity:0.3;z-index:99;display:none;}
+
+.grid h5{
+	padding:15px 0;
+	font-size:18px;
+	color:#34AC98;
+}
+.footer{
+	border-top:2px solid #e5e5e5;
+	margin:20px 0;
+	padding:20px 0;
+	color:#aaa;
+	font-size: 14px;
+}
+.f-content{
+	float:left;
+}
+.footer a{
+	line-height: 1.5em;
+	color:#34AC98;
+}
+.footer a:hover{
+	color:#C0680A;
+}
+.social{
+	float:right;
+}
+.social li{
+	float: left;
+	display: inline;
+	margin-left: 5px;
+}
+.social li a{
+	display: block;
+	width: 32px;
+	height: 32px;
+	text-indent: -999em;
+	
+}
+.footer .twitter a {
+
+}
+.footer .twitter a:hover{
+	display: block;
+	width: 32px;
+	height: 32px;
+	text-indent: -999em;
+}
+.right-content h2{
+	font-size:26px;
+	color:#EC6635;
+	margin-bottom:10px;
+}
+.p-content{
+	margin-top:30px;
+}
+.p-content .box{
+	width:830px;
+	margin-bottom:30px;
+}
+
+.p-content .box img {
+	float:left;
+	margin:0 20px 40px 0;
+}
+.p-content .box h3{
+	font-size:20px;
+	color:#34AC98;
+	margin-bottom:20px;
+}
+.btn{
+	margin-top:30px;
+}
+.btn a{
+	margin-right:40px;
+	color:#34AC98;
+	border-radius: 5px;
+	border: 1px solid #E5E5E5;
+	font-size:14px;
+	text-align:center;
+	padding:5px 15px;
+}
+.btn a:hover{
+	color:#EC6635;
+}
+.paginate{
+	text-align:center;
+}
+.paginate li{
+	display: inline;
+	margin-right:15px;
+}
+.paginate li a{
+	color:#EC6635;
+}
+.paginate li a:hover, .paginate ul li.current a {
+	color:#34AC98;
+}
