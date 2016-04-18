@@ -15,13 +15,17 @@ function a2d(n){
 	
 	
 	function hover(obj,ev){
+		var s=document.body.scrollTop||document.documentElement.scrollTop;
 		var x=ev.clientX;
-		var y=ev.clientY;
+		var y=ev.clientY+s;
 		var cX=gotPos(obj).l+obj.offsetWidth/2;
 		var cY=gotPos(obj).t+obj.offsetHeight/2;
 		var a=cX-x;
 		var b=cY-y;
+		//var a1=Math.atan2(b,a)*180/Math.PI;
+		//var a2=Math.round((a1+180)/90);
 		return (Math.round((Math.atan2(b,a)*180/Math.PI+180)/90))%4;
+		
 	}
 	
 	
@@ -57,7 +61,8 @@ function a2d(n){
 		
 		oBox1.onmouseout=function(ev){
 			var oEv=ev||event;
-			
+			var to=oEv.toElement||oEv.relatedTarget;
+			if(this.contains(to))return;
 			var n=hover(oBox1,oEv);
 			switch(n){
 				case 0:

@@ -5,7 +5,6 @@
 <title>无标题文档</title>
 <link href="css/base.css" rel="stylesheet" />
 <style>
-		img{ transition:.5s all;}
 		
        .header{width:100%;height:116px;background:url(img/bg-1.jpg) repeat-x;border-bottom:2px solid #231006;}
 	   .nav{width:100%;height:36px;background:url(img/bg-2.jpg);border-bottom:2px solid #9a7767;}
@@ -24,7 +23,7 @@
 	   .nav-bgd{width:100%;height:448px;background:url(img/bgd-1.jpg) 50% 0;}
 	   .nav-bgd img{ transform:translate(-167px); vertical-align:top;}
 	   
-	   .nav-fix{width:129px;height:129px;position:fixed;right:200px;top:196px;}
+	   /*.nav-fix{width:129px;height:129px;position:fixed;right:200px;top:196px;}*/
 	   .nav-end{width:100%;height:6px;background:url(img/b-bgd-2.jpg) repeat-x;margin:auto;}
 	   
 	   .nav-end-1{width:960px;height:39px;margin:0 auto;}
@@ -185,21 +184,10 @@
 	    .bottom-foot{width:960px;height:125px;margin:0 auto;}
 		.bottom-foot p,a{text-align:center;line-height:20px;color:#FFFFFF;}
 		.bottom-foot1{padding-top:20px;}
+	
+		.nav-play img:hover,.part2-right img:hover,.part4-box img:hover,.part6 img:hover{transform:translate(0,30px);transition:.5s all;opacity:0.8};
 </style>
-<script>
-	window.onload=function(){
-		var aImg=document.getElementsByTagName('img');
-		for(var i=0;i<aImg.length;i++){
-			aImg[i].onmouseover=function(){
-				this.style.opacity='0.3';
-			};
-			
-			aImg[i].onmouseout=function(){
-				this.style.opacity='1';
-			};
-		}
-	};
-</script>
+
 </head>
 
 <body>
