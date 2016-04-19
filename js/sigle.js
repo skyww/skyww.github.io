@@ -109,7 +109,10 @@ window.onload=function(){
 			var aSpan=oBox.children;
 
 			var iNow=0;
+			var t=true;
 			oBox.onclick=function(){
+				if(t==false)return;
+				t=false;
 				var n=0;
 				iNow++;
 				
@@ -123,6 +126,7 @@ window.onload=function(){
 										aSpan[i].style.backgroundImage='url(images/j'+iNow%3+'.jpg)';
 										oBox.style.backgroundImage='url(images/j'+(iNow+1)%3+'.jpg)';
 									}
+									t=true;
 								}
 							}
 						});
