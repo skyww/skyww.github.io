@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body{ background:#000; color:#f00; font-size:50px;}
+span{ opacity:0;}
+</style>
+<script src="file:///D|/js课件和作业/例子总结/move/js/move.js"></script>
+<script>
+window.onload=function(){
+	var str='内容简介：一个是在监狱长大的犯罪天才，一个是在派出所长大的天才警察。犯罪天才加入了一个特大犯罪集团，集团成员有杀人犯、抢劫犯、盗窃犯、强奸犯、毒枭、乞丐、妓女。警方从全国范围内挑选了三名最出色的警察担任卧底，一个刑警，一个越战退伍军人，一个武警教官。警方根据卧底掌握的证据，先后打掉了犯罪集团的多名骨干。在最后抓捕的时刻，三个卧底身份败露，被犯罪分子扔在一个无人的荒岛上，生死未卜……。任何语言都描述不了一朵花，但我们可以准确叙述一些看不见摸不着的东西，例如黑暗、幸福、爱与灵魂。蜡烛的泪滴落下来，会形成钟乳石的形状，这也恰好说明一个人的悲伤有其动人之处。水因为寒冷而坚硬，用屋檐垂下来的冰锥可以杀死一个人；瓷器因为碎了而更锋利，用一块碎片可以杀死很多人。'	
+	for( var i=0; i<str.length; i++){
+		var oSpan=document.createElement('span');
+		oSpan.innerHTML=str.charAt(i);
+		document.body.appendChild(oSpan);
+	}
+	var aSpan=document.body.children;
+	var i=0;
+	var timer=setInterval(function(){
+			move(aSpan[i],{opacity:1});
+			i++;
+			if(i==str.length){
+				clearInterval(timer);	
+			}
+	},100)
+};
+</script>
+</head>
+
+<body>
+</body>
+</html>

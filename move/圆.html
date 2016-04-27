@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+div{ width:300px; height:300px; border:1px solid #ccc; margin:50px auto; border-radius:50%; position:relative}
+span{ width:30px; height:30px; background:red; border-radius:50%; position:absolute; top:0; left:50%; margin-left:-15px; margin-top:-15px;}
+</style>
+<script>
+function d2a(n){
+		
+		return n*Math.PI/180;
+	}
+
+	window.onload=function(){
+		var oBox=document.getElementById('box');
+		var oSpan=oBox.children[0];
+			
+		var R=oBox.offsetWidth/2;
+		
+		var N=10;
+		
+		for(var i=0; i<N;i++){
+			var oSpan=document.createElement('span');
+			oBox.appendChild(oSpan);
+		}
+		
+		
+		var aSpan=document.getElementsByTagName('span');
+		var bShow=false;
+		document.onclick=function(){
+			if(bShow){
+				for(var i=0;i<aSpan.length;i++){
+					startMove(aSpan[i],0);
+				}
+			}else{
+				for(var i=0;i<aSpan.length;i++){
+					var a=360/N*i;
+					startMove(aSpan[i],a);
+				}		
+			}
+			bShow=!bShow;
+		}
+		
+		function startMove(obj,target){
+			clearInterval(obj.timer);
+			var start=obj.c||0;
+			var dis=target-start;
+			var count=Math.floor(1000/30);
+			var n=0;
+			obj.timer=setInterval(function(){
+				n++;
+				var a=1-n/count;
+				var cur=start+dis*(1-a*a*a);
+				
+				var x=R+Math.sin(d2a(cur))*R;
+				var y=R-Math.cos(d2a(cur))*R;
+				obj.style.left=x+'px';
+				obj.style.top=y+'px';
+				obj.c=cur;
+				
+				if(n==count){
+					clearInterval(obj.timer);
+				}
+			},30);	
+		}
+		
+	};
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>

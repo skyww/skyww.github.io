@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;list-style:none;}
+	div{overflow:hidden;}
+	ul{float:left;width:220px;margin:10px 0;}
+	li{width:200px;margin:10px auto;background:green;}
+</style>
+<script>
+	function rnd(n,m){
+		return parseInt(Math.random()*(m-n)+n);
+	}
+	window.onload=function(){
+		
+		window.onscroll=function(){
+			var oS=document.body.scrollTop||document.documentElement.scrollTop;
+			var oSb=oS+document.documentElement.clientHeight;
+			if(oSb>=document.body.offsetHeight-500){
+				addLi();
+			}
+		};
+	
+	
+	function create(){
+		var oLi=document.createElement('li');
+		oLi.style.height=rnd(100,500)+'px';
+		return oLi;
+	}
+	
+	var aUl=document.getElementsByTagName('ul');
+	
+	addLi();
+	function addLi(){
+		for(var i=0;i<20;i++){
+			var arrUl=[];
+			for(var j=0;j<aUl.length;j++){
+				arrUl[j]=aUl[j];
+			}
+			arrUl.sort(function(oUl1,oUl2){return oUl1.offsetHeight-oUl2.offsetHeight;});
+			arrUl[0].appendChild(create());
+		}
+	}
+	
+	
+	
+	};
+</script>
+</head>
+
+<body>
+	<div>
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+	</div>
+</body>
+</html>

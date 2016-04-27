@@ -7,13 +7,44 @@
 <title>智能社 - www.zhinengshe.com</title>
 <style>
 	*{ padding:0; margin:0; list-style:none;}
-	 body{background:linear-gradient(#fff,skyblue);height:617px;}
+	 body{background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#fff));;height:617px;}
 	.box{ width:800px; border:1px solid red; margin:50px auto; height:358px; position:relative; overflow:hidden;}
 	.box ul{ position:absolute; top:50%; height:179px; margin-top:-90px;}
 	.box li{ float:left; width:260px; height:179px; padding:0 10px; position:relative;}
 	.box img{ width:260px; height:179px;}
 	.box1{width:100%;position:absolute;left:0;bottom:0;text-align:center;}
 	.box1 img{width:64px;}
+	
+	
+	.navbox{position:relative;margin-top:-375px;left:30px;}
+	.navbox .nav {
+	width: 200px;
+	padding: 60px 0 60px 0;
+	background:url(img3/shad2.png) no-repeat;
+	-webkit-background-size: 50% 100%;
+	}
+	
+	.nav li a {
+	-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url(img3/border.png) no-repeat;
+	color: #174867;
+	padding: 7px 15px 7px 15px;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	display: block;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	}
+
+	.nav li {
+	margin: 5px 0 0 0;
+	}
+	.nav li a:hover {
+	background: #ebebeb url(img3/border.png) no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 30px;
+	}
 </style>
 <script>
 
@@ -121,6 +152,18 @@
 		<img src="img3/3.png" />
 		<img src="img3/4.png" />
 		<img src="img3/5.png" />
+	</div>
+	
+	
+	<div class="navbox">
+		<ul class="nav">
+			<li><a href="move/打字效果.html">打字效果</a></li>
+			<li><a href="move/圆.html">圆的运动</a></li>
+			<li><a href="move/翻转字符串.html">翻转字符串</a></li>
+			<!--<li><a href="../move/输入框提示文字.html">输入框文字</a></li>-->
+			<li><a href="">XHTML</a></li>
+			<li><a href="">XHTML</a></li>
+		</ul>
 	</div>
 	
 </body>
