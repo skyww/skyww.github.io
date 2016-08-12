@@ -1,0 +1,86 @@
+body{
+	background:url("../img/bg.png") no-repeat;
+	
+}
+.main{
+	width: 12.7rem;
+	height: 82%;
+	margin: 0 auto;
+}
+.none1{
+	height: 4%;
+}
+.logo{
+	width: 5.025rem;
+	height:16.4%;
+	background: url("../img/logo.png") no-repeat;
+	background-size: 100%;
+}
+.logo a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -999em;
+}
+.none2{
+	height: 16%;
+}
+.handwriting {
+	width: 7.21875rem;
+	height: 40.5%;
+	background: url("../img/handwriting.png") no-repeat;
+	background-size: 100%;
+}
+.none3{
+	height: 12%;
+}
+.tourist{
+	height: 3.6%;
+	font-size: 0.25rem;
+	padding-left: 0.125rem;
+	color: #fff;
+	text-decoration: underline;
+}
+.tourist a{
+	color: #fff;
+}
+.footer{
+	height: 18%;
+	background:url("../img/dibu.png") no-repeat;
+}
+.foot{
+	width: 12.7rem;
+	height: 100%;
+	margin: 0 auto;
+}
+.none10{
+	height: 29%;
+}
+.huidu{
+	width: 1.4875rem;
+	height: 26%;
+	background:url("../img/logo2.png") no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+}
+.huidu a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0.1875rem;
+	text-indent: -999em;
+}
+.none11{
+	height: 12%;
+}
+.statement{
+	width: 100%;
+	height: 31%;
+	font-size: 0.1875rem;
+	line-height: 100%;
+	text-align: center;
+	color: #868686;
+}
+.statement a{
+	color: #868686;
+}
