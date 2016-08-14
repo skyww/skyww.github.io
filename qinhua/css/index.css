@@ -84,3 +84,105 @@ body{
 .statement a{
 	color: #868686;
 }
+.login_max{
+	position: fixed;
+	left:9.7375rem;
+	top:1.5375rem;
+	width:3.5rem;
+	height:4.4125rem;
+	background: #7c56a1;
+	border-radius:0.025rem;
+	padding:0.325rem 0.5125rem 0.2625rem 0.5125rem;
+}
+
+.login_titleBox{
+	margin-bottom: 0.525rem;
+}
+
+
+.login_icon{
+	width:0.95625rem;
+	height: 0.875rem;
+	background: url("../img/qinhua_logo.png") no-repeat;
+	background-size: 100%;
+	margin-right: 0.2125rem;
+}
+.login_title{
+	width:2.31875rem;
+	line-height: 0.6125rem;
+	font-size: 0.2625rem;
+	border-bottom:1px solid  #663d8f;
+	color:#fff;
+	padding-top:0.15rem;
+}
+.msg_box{
+	position: relative;
+	font-size: 0;
+}
+.msg_box input{
+	width:2.96875rem;
+	height: 0.5rem;
+	font-size: 0.1875rem;
+	background: #734b9b;	
+	padding-left:0.53125rem;
+	margin-bottom: 0.375rem;
+}
+.msg_box input::-webkit-input-placeholder{
+	color:#fff;
+}
+.d_msg,.d_msg2{
+	font-size: 0.175rem;
+	color:#f08095;
+	position: absolute;
+	left:0.53125rem;
+	top:-0.21875rem;
+}
+
+.d_btn{
+	font-size: 0.2125rem;
+	color:#fff;
+}
+.icon1{
+	width:0.2125rem;
+	height: 0.2125rem;
+	background:url("../img/user_qinhua.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left:0.1375rem;
+	top:0.15rem;
+}
+.icon2{
+	width:0.2125rem;
+	height: 0.25rem;
+	background:url("../img/key_qinhua.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	left:0.1375rem;
+	top:0.125rem;
+}
+.select_box{
+	margin-bottom: 0.5rem;
+	height: 0.1625rem;
+	padding-top:0.05rem;
+}
+.d_select{
+	width:0.15rem;
+	height: 0.15rem;
+	background:url("../img/select_qinhua.png") no-repeat;
+	background-size: 100%;
+}
+.d_next{
+	font-size: 0.15rem;
+	color:#cca6f2;
+	line-height: 100%;
+	padding-left: 0.0625rem;
+}
+.d_btn{
+	width:3.5rem;
+	height: 0.5rem;
+	background: #dd6b8a;
+	text-align: center;
+	line-height: 0.5rem;
+}
+.d_btn:hover{
+	background:#dd68ca;}
