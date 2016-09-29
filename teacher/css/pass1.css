@@ -1,0 +1,126 @@
+/* CSS Document */
+.content{ background:#fff;}
+.passBox{width:600px;height:460px; background:#fff; position:fixed; left:50%; top:50%; margin-left:-300px; margin-top:-230px;z-index:5;}
+
+.opabox{width:100%; height:100%; background:#000;opacity:0.5; filter:alpha(opacity:50); position:absolute; left:0;top:0;}
+.passBox h2{width:575px;height:50px;background:#3ebfe9;line-height:50px;padding-left:25px;color:#fff;font-size:14px;position:relative;}
+.passBox .icon1{width:17px;height:16px;background:url(../img/icon1.png) no-repeat;position:absolute;right:5px;top:8px;}
+.passCon{width:575px;height:300px;margin:20px 0 20px 20px;position:relative;}
+.passCon .left{width:300px;height:300px;background:#f2f2f5;}
+.passCon .right{width:275px;height:300px;text-align:center;}
+
+.passCon .left_btn{width:120px;height:40px;background:#fff;text-align:center;line-height:40px;margin:120px auto;position:relative;font-size:14px;color:#666;}
+.passCon .left_btn .b1{width:14px;height:14px;background:url(../img/icon2.png) no-repeat;position:absolute;left:10px;top:12px;}
+
+
+.right p{font-size:14px;}
+.right .p1{margin:70px 0 20px 0;}
+.right .changeIm{width:100px;height:100px;background:url(../img/user.png) no-repeat;border-radius:50%;margin:0 0 13px 90px;}
+
+
+ 
+.right .p2{color:#a9a9a9;}
+
+/*新增加的按钮 6-15*/
+.right .right_b1{width:100px;height:36px;border:1px solid #999;color:#666;text-align:center;line-height:36px;margin:30px 0 0 85px;}
+
+.line5{width:600px;border-bottom:1px solid #d6d6d6;position:absolute;/*bottom:55px;*/bottom:65px;left:0;}
+
+.btn_s1,.btn_s2{width:100px;height:40px;position:absolute;text-align:center;line-height:40px;font-size:14px;}
+
+
+.btn_s1{background:#2facd4;left:180px;bottom:10px;color:#fff;transition:0.1s all ease;}
+/*新增加的按钮 6-15*/
+.btn_s1 .loading_btn{width:18px;height:18px;background:url(../img/loading.gif) no-repeat;position:absolute;left:10px;top:10px;z-index:3;}
+/*按下之后变色*/
+.btn_s1_aM{background:#3ebfe9;padding-right:5px;}
+
+.btn_s2{border:1px solid #ccc;left:310px;bottom:10px;color:#333;}
+
+
+/*新增加的按钮 6-15 上传成功后弹出的窗口*/
+.btn_s3{width:118px;height:48px;background:url(../img/alert.png) no-repeat;position:absolute;left:185px;top:360px;}
+
+.btn_s3 .btn_s3_ic2{position:absolute;left:33px;top:12px;}
+.btn_s3 .btn_s3_ic3{position:absolute;left:92px;top:13px;}
+
+/*任务-题库*/
+.task_head{width:1080px;height:50px;border-bottom:1px solid #e9e9e9;}
+.task_head_tit{width:78px;height:50px;display:block;line-height:50px;font-size:18px;color:#666;border-bottom:2px solid #3bbee9;text-align:center;margin-left:40px;font-weight:bold;}
+.task_left{width:640px;min-height:800px;}
+.task_right{width:440px;min-height:800px;position:relative;}
+.task_left_top{height:60px;background:#fcfcfd;width:640px;}
+.task_left_1{font-size:16px;color:#333;margin:23px 0 20px 40px;}
+/*鼠标不可以点的状态*/
+.task_left_2{width:120px;height:30px;color:#fff;text-align:center;line-height:30px;background:#d4d4d4;margin:15px 30px 13px 0;font-size:14px;}
+/*正常点击*/
+.task_left_2_aC{background:#f8ae57;color:#fff;}
+/*正常点击之后*/
+.task_left_2_aC_press{background:#eaa24e;color:#fff;}
+.task_left_content{width:564px;margin:0 auto;min-height:300px;}
+.task_left_box{position:relative;margin-bottom:20px;}
+.task_icon_remove{width:26px;height:26px;background:url(../img/task_re.png) no-repeat;position:absolute;right:-13px;top:-13px;}
+.task_icon_remove_aC{background:url(../img/task_re_dn.png) no-repeat;}
+.task_left_q1,.task_left_q2{background:#fefbf5;min-height:80px;padding-bottom:10px;}
+.task_left_q1_aC{border:1px solid #f0b466;}
+.task_q1_tit,.task_q2_tit{padding:20px 0 10px 10px;font-size:14px; font-family:'微软雅黑';color:#333;}
+.task_q1_s1{padding:0 22px 0 13px;color:#666;}
+.task_q1_s2{color:#666;padding:16px 0 0 13px;}
+.task_q1_msg{font-size:14px; font-family:"微软雅黑";color:#7fc045;padding:10px 15px 0px 15px;}
+.task_q2_tit1{padding-bottom:10px;padding-left:15px;padding-right:15px;}
+.task_right_bg{width:440px;height:60px;background:#fcfcfd;border-bottom:1px solid #e9e9e9;}
+.task_right_content{width:400px;border:1px solid #e9e9e9;/*position:fixed;left: auto; right: auto;  bottom: auto; top:0px; position:absolute;left:0;top:0;*/background:#fcfcfd; height:390px;overflow:hidden;position:relative;}
+.task_right_top{height:60px;background:#e8f4f8;}
+.task_right_tit1{font-size:15px;color:#333;padding:22px 8px 22px 33px;}
+.task_right_tit2{width:290px;height:25px;margin:20px 0 22px 0;line-height:25px;font-size:15px;color:#333;padding-left:13px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.task_right_content1{width:380px;margin:0px auto; overflow:hidden;padding-bottom:20px;}
+.Com_Width{width:380px;}
+.task_right_box{position:relative;background:#fff;}
+.task_right_q1{background:#fff;border:1px solid #e9e9e9;width:350px;margin-left:15px;margin-top:20px;}
+.task_right_con1{width:316px;border-bottom:1px solid #e9e9e9;margin:12px 0 0 14px;padding-bottom:10px;}
+.task_right_t1{font-size:13px;color:#333;padding-bottom:13px;}
+.task_right_s1{padding:0 22px 0 0px;color:#666;font-size:13px;}
+.task_right_s2{color:#666;font-size:13px;padding:16px 0 0 0;}
+.task_q2_msg{font-size:13px; font-family:"微软雅黑";color:#7fc045;padding:10px 15px 10px 15px;}
+.task_icon_add{width:26px;height:26px;background:url(../img/jia-default.png) no-repeat;position:absolute;right:0px;top:-11px;}
+.task_icon_add_aC{background:url(../img/jia-pressed.png) no-repeat;}
+.task_right_t2{color:#666;font-size:13px;padding-bottom:10px;}
+.task_right_d1{padding-bottom:10px;line-height:22px;color:#333;font-size:13px;}
+.task_right_scoll,.task_right_scoll_1{height:33px;border:1px solid #e9e9e9;width:400px;margin-left:-1px;cursor:pointer;}
+.task_right_scoll{background:url(../img/task_up.png) no-repeat;}
+.task_right_scoll_1{position:absolute;bottom:0px;left:0;background:url(../img/task_down.png) no-repeat;}
+.task_down_down{background:url(../img/task_down_down.png) no-repeat;}
+.task_up_down{background:url(../img/task_up_down.png) no-repeat;}
+
+.task_alert{font-size:15px;color:#cacdd3;margin-top:90px;padding-left:140px;}
+.task_im{width:225px;margin:115px auto;}
+.task_im_icon{width:233px;height:158px;background:url(../img/task_im.png) no-repeat;margin-left:30px;}
+.task_im_t1{color:#666;font-size:18px;padding:18px 0 10px 52px;}
+.task_im_t2{color:#999;font-size:14px;padding-left:10px;}
+
+/*新增的样式*/
+.task_objective,.task_subjective{padding-top:28px;height:24px;border-bottom:1px solid #ddd;margin-bottom:30px;}
+.task_objective h2{color:#666;font-size:16px;font-weight:bold;}
+.task_subjective h2{color:#666;font-size:16px;font-weight:bold;}
+
+/*任务——题库新增选择题样式*/
+.task_xzt{
+	margin-left:20px;
+}
+.task_xzt li div{
+	margin-bottom:10px; 
+}
+.task_xzt_left{
+	width:135px;
+	margin-right:23px;
+}
+.task_xzt_right{
+	width:135px;
+}
+.task_xzt_left_question{
+	width:250px;
+	margin:0 25px 0 20px;
+}
+.task_xzt_right_question{
+	width:250px;
+}

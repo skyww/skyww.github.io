@@ -1,0 +1,313 @@
+/* 阅读分析报告  */
+html, body, ul, li, p, form, dl, dt, dd, h1, h2, h3, iframe, input, button {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px/1.5 'Microsoft YaHei', simsun, Arial, Helvetica, sans-serif;
+	color: #999;
+	min-width: 1080px;
+}
+ul, li {
+	list-style-type: none;
+}
+img {
+	border: 0;
+}
+a {
+	color: #999;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.w1080 {
+	width: 1080px;
+	margin: 0 auto;
+}
+.ti-header {
+	position: relative;
+	z-index: 2;
+	height: 30px;
+	line-height: 30px;
+	background: #3ebfe9;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+	padding: 15px 0;
+}
+.ti-header .login {
+	float: right;
+	line-height: 28px;
+	color: #fff;
+	margin-right: 54px;
+	border: #fff 1px solid;
+	border-radius: 20px;
+	padding: 0 20px;
+}
+.baogao {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-bottom: -40px;
+}
+.baogao-area {
+	width: 800px;
+	height: 1200px;
+	line-height: 36px;
+	font-size: 20px;
+	margin: 24px auto;
+	border: #ddd 1px solid;
+	box-shadow: 0 5px 0 #ececec;
+	padding: 36px;
+}
+.baogao-area h2 {
+	margin: 30px 0;
+	border-left: #3ebfe9 8px solid;
+	padding-left: 12px;
+}
+.baogao-area img {
+	display: block;
+}
+.style1 h2 {
+	margin: 155px 0 114px;
+	border: 0;
+}
+.style1 h2 p{
+	width:434px;
+	height: 95px;
+	background: url(../img/baogao_1_h2.png) no-repeat;
+	margin: 0 auto;
+}
+.style1 .img01 {
+	margin: 0 auto;
+	width:478px;
+	height: 399px;
+	background: url(../img/baogao_user.png) no-repeat;
+}
+.style1 dl {
+	font-size: 28px;
+	line-height: 64px;
+	text-align: center;
+	margin: 100px 0 200px;
+}
+.style1 dt {
+	width: 320px;
+	color: #fff;
+	background: #3ebfe9;
+	margin: 0 auto;
+}
+.style1 dd {
+	color: #3ebfe9;
+	margin-top: 40px;
+}
+.baogao-area .img {
+	display: block;
+	width: 800px;
+	height: 240px;
+	margin: 20px 0;
+	background: url(../img/800x240.jpg) no-repeat;
+}
+.baogao-area-tit1{
+	font-size:32px;
+	color:#666;
+	font-family: "黑体";
+	font-weight: normal;
+}
+.baogao-area-tit2{
+	width:161px;
+	height: 36px;
+	display: block;
+	background: url(../img/baogao_3_h2.png) no-repeat;
+}
+.baogao-area-tit3{
+	width:118px;
+	height: 36px;
+	display: block;
+	background: url(../img/baogao_4_h2.png) no-repeat;
+}
+.baogao-area-tit4{
+	width:77px;
+	height: 36px;
+	display: block;
+	background: url(../img/baogao_5_h2.png) no-repeat;
+}
+.baogao-area p {
+	color: #333;
+	margin: 20px 0;
+}
+.baogao-area p.jy {
+	color: #999;
+	background: #f7f8fc;
+	margin-bottom: 40px;
+	padding: 10px 18px;
+}
+.baogao-area p.jy span {
+	background: url(../img/baogao_jy.png) no-repeat left 5px;
+	padding-left: 30px;
+}
+.baogao-area em {
+	color: #3ebfe9;
+	font-style: normal;
+	padding: 0 6px;
+}
+.baogao-area ul {
+}
+.baogao-area li {
+	color:#333;
+}
+.directory-nav {
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 54px;
+	padding: 12px 0;
+	display: none;
+}
+.directory-nav li {
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+}
+.directory-nav li a {
+}
+.directory-nav .l1 {
+	cursor:pointer;
+}
+.directory-nav .l2 {
+	text-indent: 0.6em;
+}
+.directory-nav .l1 a {
+	font-size: 16px;
+}
+.directory-nav .l2 a {
+	font-size: 14px;
+}
+.directory-nav, .directory-nav a {
+	color: #666;
+}
+.directory-nav .cur a {
+	color: red;
+}
+.directory-nav .c-dot {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	z-index: 2;
+	margin-top: -8px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	font-size: 0;
+	line-height: 0;
+	background: url(../img/directory-nav.png) no-repeat 0 -16px;
+}
+.directory-nav .cur-tag {
+	position: absolute;
+	left: 0;
+	top: 30px;
+	z-index: 5;
+	margin-top: -8px;
+	display: block;
+	width: 16px;
+	height: 16px;
+	font-size: 0;
+	line-height: 0;
+	background: url(../img/directory-nav.png) no-repeat 0 0;
+	-webkit-transition: top .3s ease 0s;
+	transition: top .3s ease 0s;
+}
+.baogao-area dl dd{
+	color:#333;
+}
+.baogao-area dl .baogao_list_color{
+	color:#99d068;
+}
+.baogao-area .baogao_tit_color{
+	color:#3ebfe9;
+}
+.baogao_list_icon{
+	background: url(../img/li02.png) no-repeat left 16px;
+	padding-left:18px;
+}
+
+/*教师端阅读分析报告*/
+.yd_fenxi{
+	width:835px;
+	min-height: 600px;
+	padding: 30px 0 0 23px;
+	position: relative;
+}
+.yd_fenxi_list1{
+	width:779px;
+	height: 170px;
+	background: #fff;
+	border-radius: 6px;
+	padding:30px 0 0 37px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.fenxi_class_icon{
+	width:242px;
+	height: 140px;
+}
+.fenxi_class_class{
+	background: url(../img/class_icon.png) no-repeat;
+}
+.fenxi_class_grade{
+	background: url(../img/grade_icon.png) no-repeat;
+}
+.fenxi_class_section{
+	background: url(../img/section_icon.png) no-repeat;
+}
+.fenxi_class_period{
+	background: url(../img/period_icon.png) no-repeat;
+}
+.fenxi_con1{
+	width:363px;
+	overflow: hidden;
+	text-align: center;
+}
+.fenxi_con1 p{
+	font-size:26px;
+	color:#666;
+	line-height: 40px;
+}
+.fenxi_btn a{
+	font-size: 16px;
+	color:#fff;
+	width:120px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	text-decoration: none;
+}
+.fenxi_open{
+	background: #3ebfe9;
+	margin:8px 0 27px 0;
+}
+.fenxi_down{
+	background: #99d068;
+}
+.fenxi_open:hover{
+	background: #2facd4;
+	margin:8px 0 27px 0;
+}
+.fenxi_down:hover{
+	background: #7fc045;
+}
+.fenxi_icon_one{
+	width:79px;
+	height: 79px;
+	background: url(../img/reader_list_fenxi_icon.png) no-repeat;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+li .fenxi_color_class{
+	color:#2facd4;
+}
+li .fenxi_color_term{
+	color:#7fc045;
+}
