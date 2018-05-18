@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		<meta name="wap-font-scale" content="no">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;list-style: none;}
+			ul li{font-size: 0.8rem;width:50%;float: left;}
+			ul li b{color:blue;}
+		</style>
+	</head>
+
+	<body>
+		<ul>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+			<li>阅读分析报告<b>6</b></li>
+		</ul>
+	</body>
+	<script>
+		(function(win,doc){
+			function change(){
+			doc.documentElement.style.fontSize=20*doc.documentElement.clientWidth/414+'px';
+			}
+			change();
+			win.addEventListener('resize',change,false);
+		})(window,document);
+	</script>
+
+</html>
